@@ -1,0 +1,44 @@
+//simple types
+let username: string="supriya";
+let age: number=21;
+let isStudent: boolean =true;
+console.log("Name:",username);
+console.log("Age:",age);
+console.log("Student:",isStudent);
+
+//Array type
+let marks: number[]=[85,90,98];
+console.log("Marks:",marks);
+
+//tuple type
+let person:[string,number]=["Ammu",22];
+console.log("Tuple:",person);
+//Enum type
+enum Color{
+    Red,
+    Green,
+    Blue
+}
+let c: Color=Color.Green;
+console.log("Enum value:",c);
+
+//Any type(Special)
+let randomValue: any="Hello";
+randomValue=100;
+console.log("Any type:",randomValue);
+
+//unknown typr
+let data: unknown="TypeScript";
+console.log("Unknown:",data);
+
+//void type
+function sayHello(): void{
+    console.log("Hello world");
+}
+sayHello();
+
+//never type
+function throwError(): never{
+    throw new Error("Error occured");
+}
+//throwError();//uncomment to test
